@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Halloween Anime, Superhéroes y Terror | Mundo Surrealista 2025</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="df.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+    }
+
+    .parallax {
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .parallax-1 {
+        background-image: url('Friday1.jpg');
+    }
+
+    .parallax-2 {
+        background-image: url('freddy2.jpg');
+    }
+
+    .parallax-3 {
+        background-image: url('michael3.jpg');
+    }
+
+    .content-section {
+        height: 50vh;
+        background-color: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+</style>
+</head>
+<body>
+<div class="parallax parallax-1"></div>
+
+<div class="parallax parallax-2"></div>
+
+<div class="parallax parallax-3"></div>
+
+<script>
+    // If you wish to dynamically add more parallax sections:
+    function addParallaxSection(imageUrl) {
+        const parallaxDiv = document.createElement('div');
+        parallaxDiv.classList.add('parallax');
+        parallaxDiv.style.backgroundImage = `url('${imageUrl}')`;
+        document.body.appendChild(parallaxDiv);
+
+        const contentDiv = document.createElement('div');
+        contentDiv.classList.add('content-section');
+        contentDiv.textContent = 'New Content Section';
+        document.body.appendChild(contentDiv);
+    }
+
+    // Example usage:
+    // addParallaxSection('image4.jpg');
+    // addParallaxSection('image5.jpg');
+</script>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mundo Geek</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="asd.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="8dfd.html">Ofertas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Novedades</a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="2dg.html">Promociones</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="7ery.html">Figuras Nuevas</a></li>
+                                <li><a class="dropdown-item" href="8dfd.html">En oferta</a></li>
+                                <li><a class="dropdown-item" href="9jiji.html">Intereses</a></li>
+                            </ul>
+                        </li>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="title">Figuras que te pueden interesar</h1>
+        <nav>
+            <ul>
+                <li><a href="#anime">Anime</a></li>
+                <li><a href="#superheroes">Superhéroes</a></li>
+                <li><a href="#terror">Terror</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="anime" class="section">
+        <h2>Figuras de Anime</h2>
+        <div class="container">
+            <div class="card anime">
+                <img src="01a.png" alt="Figura de Anime" />
+                <h3>Figura de Backugo</h3>
+                <p>Un héroe en medio de la oscuridad, con detalles en 3D flotando.</p>
+            </div>
+            <div class="card anime">
+                <img src="D_NQ_NP_771099-MLC54984892710_052023-O.webp" alt="Figura de Anime" />
+                <h3>Figura de Sailor Moon</h3>
+                <p>Su poder es más fuerte que nunca, destacando en el espacio surrealista.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="superheroes" class="section">
+        <h2>Figuras de Superhéroes</h2>
+        <div class="container">
+            <div class="card superhero">
+                <img src="MEZMEZ76331.JPG" alt="Figura de Superhéroe" />
+                <h3>Superman</h3>
+                <p>Un héroe suspendido entre el espacio-tiempo, preparado para la batalla.</p>
+            </div>
+            <div class="card superhero">
+                <img src="spider.jpg" alt="Figura de Superhéroe" />
+                <h3>Spider-Man</h3>
+                <p>Flotando entre dimensiones, listo para enfrentarse al caos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="terror" class="section">
+        <h2>Figuras de Terror</h2>
+        <div class="container">
+            <div class="card terror">
+                <img src="pesadilla-en-elm-street-3-figura-freddy-krueger-30cm11.jpg" alt="Figura de Terror" />
+                <h3>Freddy Krueger</h3>
+                <p>Una presencia ominosa en el mundo surrealista, distorsionando el sueño y la realidad.</p>
+            </div>
+            <div class="card terror">
+                <img src="lol.jpg" alt="Figura de Terror" />
+                <h3>Michael Myers</h3>
+                <p>Un asesino inmutable que se desplaza entre dimensiones oscuras.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mundo Surrealista de Halloween</p>
+    </footer>
+
+</body>
+</html>

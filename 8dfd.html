@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mundo Geek</title>
+
+    <!-- Bootstrap CSS for responsive design and styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="8ll.css">
+    
+    <!-- External style for background -->
+    <style>
+        body {
+            background-image: url("well.jpg");
+            background-size: cover;
+            background-position: center;
+            font-size: 16px; /* Tamaño de fuente inicial */
+        }
+        h1 {
+            font-size: 20px;
+        }
+
+        /* Estilo para los controles de cambio de tamaño de fuente */
+        .font-size-controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .font-size-controls button {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .font-size-controls button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Estilo para el botón de lectura */
+        .font-size-controls #read-aloud {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .font-size-controls #read-aloud:hover {
+            background-color: #ffcc00;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Controles para cambiar el tamaño de la tipografía y leer en voz alta -->
+    <div class="font-size-controls">
+        <button id="decrease-font">A -</button>
+        <button id="increase-font">A +</button>
+        <button id="read-aloud">Leer todo</button> <!-- Botón para leer todo el contenido -->
+    </div>
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mundo Geek</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="asd.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="8dfd.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Novedades</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="2dg.html">Promociones</a></li>
+                            <li><a class="dropdown-item" href="3stt.html">Colección</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="4bv.html">Últimas Figuras</a></li>
+                            <li><a class="dropdown-item" href="5fsd.html">Figuras Halloween</a></li>
+                            <li><a class="dropdown-item" href="6spo.html">Registrarse</a></li>
+                            <li><a class="dropdown-item" href="7ery.html">Figuras Nuevas</a></li>
+                            <li><a class="dropdown-item" href="8dfd.html">En Oferta</a></li>
+                            <li><a class="dropdown-item" href="9jiji.html">Intereses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Compras</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section for Cards -->
+    <section class="container mt-5">
+        <div class="card-grid">
+            <a class="card" href="#">
+                <div class="background" style="background-image: url(bat.jpg)">
+                </div>
+                <div class="content">
+                    <p class="category">DC</p>
+                    <h3 class="heading">Batman</h3>
+                </div>
+            </a>
+
+            <a class="card" href="#">
+                <div class="background" style="background-image: url(super.jpeg)">
+                </div>
+                <div class="content">
+                    <p class="category">DC</p>
+                    <h3 class="heading">Superman</h3>
+                </div>
+            </a>
+
+            <a class="card" href="#">
+                <div class="background" style="background-image: url(cap.jpg)">
+                </div>
+                <div class="content">
+                    <p class="category">Marvel</p>
+                    <h3 class="heading">Capitan America</h3>
+                </div>
+            </a>
+
+            <a class="card" href="#">
+                <div class="background" style="background-image: url(deadpool.jpg)">
+                </div>
+                <div class="content">
+                    <p class="category">Marvel</p>
+                    <h3 class="heading">Deadpool</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- JavaScript to control the font size and reading functionality -->
+    <script>
+        // Cambiar tamaño de la fuente
+        document.getElementById("increase-font").addEventListener("click", function() {
+            var currentSize = parseFloat(window.getComputedStyle(document.body).fontSize);
+            document.body.style.fontSize = (currentSize * 1.1) + "px"; // Aumenta el tamaño un 10%
+        });
+
+        document.getElementById("decrease-font").addEventListener("click", function() {
+            var currentSize = parseFloat(window.getComputedStyle(document.body).fontSize);
+            document.body.style.fontSize = (currentSize * 0.9) + "px"; // Disminuye el tamaño un 10%
+        });
+
+        // Función para leer todo el contenido de la página
+        document.getElementById('read-aloud').addEventListener('click', function() {
+            let textToRead = document.body.innerText; // Obtener el texto visible de la página
+            let speech = new SpeechSynthesisUtterance(textToRead);
+            speech.lang = "es-ES"; // Configuración de idioma en español
+            window.speechSynthesis.speak(speech);
+        });
+    </script>
+
+</body>
+
+</html>

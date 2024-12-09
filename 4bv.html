@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="eed4.css">
+    <style>
+        body {
+            background-image: url("well.jpg");
+            background-size: cover;
+            background-position: center;
+            font-size: 16px; /* Tamaño de fuente por defecto */
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin-top: 20px;
+        }
+
+        /* Estilo para los botones de cambio de tamaño */
+        .font-size-controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .font-size-controls button {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .font-size-controls button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Estilo de las tarjetas de imagen */
+        .w3-card {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .w3-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .w3-card:hover {
+            transform: scale(1.05);
+        }
+
+        .w3-container h5 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            color: #ffcc00;
+            font-size: 1.25rem;
+        }
+
+        /* Estilo para el navbar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+            padding: 10px;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+            text-shadow: none;
+        }
+
+        /* Diseño de la galería de imágenes */
+        .w3-row-padding {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .w3-third {
+            flex: 1 1 30%;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Controles para cambiar el tamaño de la tipografía y leer en voz alta -->
+    <div class="font-size-controls">
+        <button id="decrease-font">A -</button>
+        <button id="increase-font">A +</button>
+        <button id="read-aloud">Leer todo</button> <!-- Botón para leer en voz alta -->
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mundo Geek</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="asd.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="8dfd.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Novedades
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="2dg.html">Promociones</a></li>
+                            <li><a class="dropdown-item" href="3stt.html">Coleccion</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="4bv.html">Ultimas Figuras</a></li>
+                            <li><a class="dropdown-item" href="5fsd.html">Figuras Halloween</a></li>
+                            <li><a class="dropdown-item" href="6spo.html">Registrarse</a></li>
+                            <li><a class="dropdown-item" href="7ery.html">Figuras Nuevas</a></li>
+                            <li><a class="dropdown-item" href="8dfd.html">En oferta</a></li>
+                            <li><a class="dropdown-item" href="9jiji.html">Intereses</a></li>
+                            <li><a class="dropdown-item" href="e23.html">JuegoTetris</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Compras</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Figuras de Terror</h1>
+
+    <!-- Galería de imágenes -->
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-third">
+            <div class="w3-card">
+                <img src="jason.webp" alt="Jason">
+                <div class="w3-container">
+                    <h5>Jason</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card">
+                <img src="chucky.avif" alt="Chucky">
+                <div class="w3-container">
+                    <h5>Chucky</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card">
+                <img src="leder.avif" alt="Leatherface">
+                <div class="w3-container">
+                    <h5>Leatherface</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-third">
+            <div class="w3-card">
+                <img src="hell.webp" alt="Hellraiser">
+                <div class="w3-container">
+                    <h5>Hellraiser</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card">
+                <img src="mmichel.webp" alt="Michael Myers">
+                <div class="w3-container">
+                    <h5>Michael Myers</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card">
+                <img src="dem.avif" alt="Demogorgon">
+                <div class="w3-container">
+                    <h5>Demogorgon</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Funcionalidad para cambiar el tamaño de la fuente
+        let currentFontSize = 16; // Tamaño de fuente inicial
+        const bodyElement = document.body;
+
+        document.getElementById('increase-font').addEventListener('click', () => {
+            currentFontSize += 2; // Aumenta 2px al tamaño de la fuente
+            bodyElement.style.fontSize = currentFontSize + "px";
+        });
+
+        document.getElementById('decrease-font').addEventListener('click', () => {
+            currentFontSize = Math.max(12, currentFontSize - 2); // Disminuye 2px, pero no menor a 12px
+            bodyElement.style.fontSize = currentFontSize + "px";
+        });
+
+        // Funcionalidad de lectura en voz alta
+        document.getElementById('read-aloud').addEventListener('click', () => {
+            const textToRead = document.body.innerText;  // Obtener el texto visible de la página
+            const utterance = new SpeechSynthesisUtterance(textToRead);
+            speechSynthesis.speak(utterance);  // Leer el texto
+        });
+    </script>
+
+    <!-- Scripts de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
